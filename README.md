@@ -36,4 +36,17 @@ Finalmente, un conjunto de acoples para cada servomotor.
 (fotos)
 
 ## Simulation Strategy
+> En nuestro caso vamos a utilizar un simulador llamado coppelia, que es con el que estamos trabajando en clase. Una de las primeras pruebas que queremos realizar en el simulador es conseguir que el dron se levante del suelo en una altura concreta y que sea capaz de desplazarse hasta un lugar indicado, de este aspecto se habla más adelante en el documento.
+> Para poder realizar las simulaciones ya tenemos implementado en el propio coppelia el objeto dron que lo vamos a modificar según las especificaciones de piezas hardware, especificadas anteriormente. De entrada hemos añadido 3 sensores para medir las distancias del dron a objetos/obstáculos cercanos.
+
+### Simulaciones Prácticas
+Simulacion simple:
+> El dorn es capaz de seguir un path creado por nosotros con el coppelia
+>
+Algoritmo de Movimiento Autónomo por Sensores Ultrasonido:
+> Agoritmo echo desde cero por el grupo para dotar al dron de movimiento mediante la sensórica de este, que consta de 3 sensores de ultrasonidos: uno frontal y dos a los laterales.
+El módulo tiene como entradas 2 puntos: origen = [xo,yo,zo] y destino =[xd,yd,zd], el lugar de donde va empezar el dron el desplazamiento y la posición exacta donde va a aterrizar.
+(foto)
+
+PATH PLANNING:
 
