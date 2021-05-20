@@ -42,7 +42,8 @@ Finalmente, un conjunto de acoples para cada servomotor.
 ### Simulaciones Prácticas
 Simulacion simple:
 > El dorn es capaz de seguir un path creado por nosotros con el coppelia
->
+(foto)
+
 Algoritmo de Movimiento Autónomo por Sensores Ultrasonido:
 > Agoritmo echo desde cero por el grupo para dotar al dron de movimiento mediante la sensórica de este, que consta de 3 sensores de ultrasonidos: uno frontal y dos a los laterales.
 El módulo tiene como entradas 2 puntos: origen = [xo,yo,zo] y destino =[xd,yd,zd], el lugar de donde va empezar el dron el desplazamiento y la posición exacta donde va a aterrizar.
