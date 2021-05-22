@@ -27,6 +27,7 @@ This is the list of the used components:
 ## Software Architecture
 
 <img src="/images/ARQUITECTURA_SW_def.png" width="500" heigh="500" >
+
 Podrás obtener más información sobre el software en el informe
 ## Amazing contributions 
 >El dron puede actuar por sí mismo. Se le puede aplicar una ruta y a partir de entonces, ser totalmente autónomo con los objetivos que se le marquen hasta que aterrice.
