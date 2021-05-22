@@ -25,7 +25,8 @@ This is the list of the used components:
 <img src="/images/hw_scheme.png" width="500" heigh="500" >
 
 ## Software Architecture
-(foto)
+
+<img src="/images/ARQUITECTURA_SW_def.png" width="500" heigh="500" >
 Podrás obtener más información sobre el software en el informe
 ## Amazing contributions 
 >El dron puede actuar por sí mismo. Se le puede aplicar una ruta y a partir de entonces, ser totalmente autónomo con los objetivos que se le marquen hasta que aterrice.
@@ -45,7 +46,7 @@ Finalmente, un conjunto de acoples para cada servomotor.
 ### Simulaciones Prácticas
 Simulación simple:
 > El dorn es capaz de seguir un path creado por nosotros con el coppelia
-(foto)
+<img src="/images/coppelia_based_path.png" width="500" heigh="500" >
 
 > El drone es capaz de esquivar 1 obejto pro la derecha o por la izquierda. NO PARA ya que es una de las primeras simulaciones(foto)
 
