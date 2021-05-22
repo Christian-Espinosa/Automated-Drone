@@ -26,7 +26,7 @@ This is the list of the used components:
 
 ## Software Architecture
 
-<img src="/images/ARQUITECTURA_SW_def.PNG" width="500" heigh="500" >
+<img src="/images/ARQUITECTURA_SW_def.png" width="500" heigh="500" >
 
 Podrás obtener más información sobre el software en el informe
 ## Amazing contributions
@@ -55,7 +55,7 @@ El drone es capaz de esquivar 1 obejto pro la derecha o por la izquierda. NO PAR
 Algoritmo de Movimiento Autónomo por Sensores Ultrasonido:
 Agoritmo echo desde cero por el grupo para dotar al dron de movimiento mediante la sensórica de este, que consta de 3 sensores de ultrasonidos: uno frontal y dos a los laterales.
 El módulo tiene como entradas 2 puntos: origen = [xo,yo,zo] y destino =[xd,yd,zd], el lugar de donde va empezar el dron el desplazamiento y la posición exacta donde va a aterrizar.
-<img src="/images/trees.PNG" width="500" height="500" >
+<img src="/images/trees.PNG" width="500" height="300" >
 
 PATH PLANNING:
 
