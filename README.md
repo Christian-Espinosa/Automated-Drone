@@ -26,7 +26,7 @@ This is the list of the used components:
 
 ## Software Architecture
 
-<img src="/images/ARQUITECTURA_SW_def.png" width="500" heigh="500" >
+<img src="/images/ARQUITECTURA_SW_def.PNG" width="500" heigh="500" >
 
 Podrás obtener más información sobre el software en el informe
 ## Amazing contributions
