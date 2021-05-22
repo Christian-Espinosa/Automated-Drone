@@ -22,7 +22,8 @@ This is the list of the used components:
 - Impresiones 3d
 
 ## Hardware Scheme
-<img src="/images/hw_scheme.png" width="500" heigh="500">
+<img src="/images/hw_scheme.png" width="500" heigh="500" >
+
 ## Software Architecture
 (foto)
 Podrás obtener más información sobre el software en el informe
