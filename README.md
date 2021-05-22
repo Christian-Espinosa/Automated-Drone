@@ -77,4 +77,6 @@ Y con esto finalmente el dron se va a mover del punto inicial al punto final:
 
 <img src="/images/path_sim.png" width="500" height="300" >
 
+## Autores:
 
+- Arnau Balaguer Albareda 1529184
