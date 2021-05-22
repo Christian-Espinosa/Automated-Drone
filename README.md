@@ -50,7 +50,9 @@ Simulación simple:
 El dorn es capaz de seguir un path creado por nosotros con el coppelia
 <img src="/images/coppelia_based_path.png" width="500" heigh="500" >
 
-El drone es capaz de esquivar 1 obejto pro la derecha o por la izquierda. NO PARA ya que es una de las primeras simulaciones(foto)
+El drone es capaz de esquivar 1 obejto pro la derecha o por la izquierda. NO PARA ya que es una de las primeras simulaciones
+
+<img src="/images/simple.png" width="500" height="500">
 
 Algoritmo de Movimiento Autónomo por Sensores Ultrasonido:
 Agoritmo echo desde cero por el grupo para dotar al dron de movimiento mediante la sensórica de este, que consta de 3 sensores de ultrasonidos: uno frontal y dos a los laterales.
@@ -64,9 +66,14 @@ Finalmente decidimos aplicar A* al ser una estrategia rápida computacionalmente
 
 Primeramente obtenemos el área de trabajo:
 
+<img src="/images/area.png" width="500" height="500" >
 
-A partir de esta obtenemos una serie de puntos por donde el dron va a pasar:
+A partir de esta obtenemos una serie de puntos por donde el dron va a pasar mediante el algoritmo A*:
 
+<img src="/images/path.png" width="500" height="500" >
 
+Y con esto finalmente el dron se va a mover del punto inicial al punto final:
+
+<img src="/images/path_sim.png" width="500" height="500" >
 
 
