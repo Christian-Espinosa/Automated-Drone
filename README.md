@@ -62,4 +62,11 @@ PATH PLANNING:
 
 Finalmente decidimos aplicar A* al ser una estrategia rápida computacionalmente y eficiente para encontrar una posible solución. En el código se le definen los obstáculos, que va a tener que evitar y el algoritmo busca una posible ruta óptima para poder ir al destino.
 
+Primeramente obtenemos el área de trabajo:
+
+
+A partir de esta obtenemos una serie de puntos por donde el dron va a pasar:
+
+
+
 
