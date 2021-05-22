@@ -1,7 +1,7 @@
 # UAV
 La idea de nuestro proyecto es montar un dron al cual definamos un trayecto, escoja el camino más apropiado, realice el recorrido y una vez hecho el recorrido aterrice de manera precisa donde se le especifique.
 ## Project description:
-La idea de nuestro proyecto es montar un dron de 4 brushless motors, con cuatro sensores ultrasonido para evitar que se choque con elementos próximos a las hélices. Además el dron llevará equipado un acelerómetro y un GPS para poder ubicar y controlar apropiadamente el dron. Para poder aterrizar con precisión se le va a implementar visión por computador que va a reconocer el terreno y distancias del dron.
+La idea de nuestro proyecto es montar un dron de 4 brushless motors, con tres sensores ultrasonido para evitar que se choque con elementos próximos a las hélices. Además el dron llevará equipado un acelerómetro y un GPS para poder ubicar y controlar apropiadamente el dron. Para poder aterrizar con precisión se le va a implementar visión por computador que va a reconocer el terreno y distancias del dron.
 
 En este github encontraremos una simulación de como nuestro dron debería comportarse en la realidad. Hemos desarrollado básicamente dos algoritmos, el primero permite al
 dron moverse de forma autònoma de un punto origen a un punto destino usando los 3 sensores de ultrasonidos para evitar colisionar con objetos en el camino. Por otra parte también hemos desarollado un algoritmo de path planning al que se le da información sobre el area donde el dron deberá volar y, teniendo en cuenta los obstáculos que hay en esta
