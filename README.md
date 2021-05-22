@@ -22,7 +22,7 @@ This is the list of the used components:
 - Impresiones 3d
 
 ## Hardware Scheme
-(foto)
+![Hardware Scheme](/images/hw_scheme.png)
 ## Software Architecture
 (foto)
 Podrás obtener más información sobre el software en el informe
@@ -30,7 +30,7 @@ Podrás obtener más información sobre el software en el informe
 >El dron puede actuar por sí mismo. Se le puede aplicar una ruta y a partir de entonces, ser totalmente autónomo con los objetivos que se le marquen hasta que aterrice.
 Tendrá un sistema aterrizaje inteligente y sensores para poderse mover con seguridad y libertad en cualquier eje.
 Este Proyecto es abiertamente muy ambicioso. Si podemos completar los objetivos especificados previamente un 10 de nota, es muy apropiado.
-## Piezas 3D
+##3D pieces
 > Utilizaremos la impresora 3D para poder hacer aquellas piezas de la estructura del dron.
 En este caso vamos a crear una caja donde guardaremos algunos componentes del dron, como las distintas placas base etc...
 Por otra parte, hemos creamos los distintos brazos del dron, donde colocaremos tanto las hélices como los distintos motores.
