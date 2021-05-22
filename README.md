@@ -80,3 +80,4 @@ Y con esto finalmente el dron se va a mover del punto inicial al punto final:
 ## Autores:
 
 - Arnau Balaguer Albareda 1529184
+- Christian Espinosa Reboredo 1459024
