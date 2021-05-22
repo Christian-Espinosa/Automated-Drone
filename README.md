@@ -29,32 +29,36 @@ This is the list of the used components:
 <img src="/images/ARQUITECTURA_SW_def.png" width="500" heigh="500" >
 
 Podrás obtener más información sobre el software en el informe
-## Amazing contributions 
->El dron puede actuar por sí mismo. Se le puede aplicar una ruta y a partir de entonces, ser totalmente autónomo con los objetivos que se le marquen hasta que aterrice.
+## Amazing contributions
+
+El dron puede actuar por sí mismo. Se le puede aplicar una ruta y a partir de entonces, ser totalmente autónomo con los objetivos que se le marquen hasta que aterrice.
 Tendrá un sistema aterrizaje inteligente y sensores para poderse mover con seguridad y libertad en cualquier eje.
 Este Proyecto es abiertamente muy ambicioso. Si podemos completar los objetivos especificados previamente un 10 de nota, es muy apropiado.
 ## Piezas 3D
-> Utilizaremos la impresora 3D para poder hacer aquellas piezas de la estructura del dron.
+Utilizaremos la impresora 3D para poder hacer aquellas piezas de la estructura del dron.
 En este caso vamos a crear una caja donde guardaremos algunos componentes del dron, como las distintas placas base etc...
 Por otra parte, hemos creamos los distintos brazos del dron, donde colocaremos tanto las hélices como los distintos motores.
 
 Finalmente, un conjunto de acoples para cada servomotor.
 
 ## Simulation Strategy
-> En nuestro caso vamos a utilizar un simulador llamado coppelia, que es con el que estamos trabajando en clase. Una de las primeras pruebas que queremos realizar en el simulador es conseguir que el dron se levante del suelo en una altura concreta y que sea capaz de desplazarse hasta un lugar indicado, de este aspecto se habla más adelante en el documento.
-> Para poder realizar las simulaciones ya tenemos implementado en el propio coppelia el objeto dron que lo vamos a modificar según las especificaciones de piezas hardware, especificadas anteriormente. De entrada hemos añadido 3 sensores para medir las distancias del dron a objetos/obstáculos cercanos.
+En nuestro caso vamos a utilizar un simulador llamado coppelia, que es con el que estamos trabajando en clase. Una de las primeras pruebas que queremos realizar en el simulador es conseguir que el dron se levante del suelo en una altura concreta y que sea capaz de desplazarse hasta un lugar indicado, de este aspecto se habla más adelante en el documento.
+Para poder realizar las simulaciones ya tenemos implementado en el propio coppelia el objeto dron que lo vamos a modificar según las especificaciones de piezas hardware, especificadas anteriormente. De entrada hemos añadido 3 sensores para medir las distancias del dron a objetos/obstáculos cercanos.
 
 ### Simulaciones Prácticas
 Simulación simple:
-> El dorn es capaz de seguir un path creado por nosotros con el coppelia
+El dorn es capaz de seguir un path creado por nosotros con el coppelia
 <img src="/images/coppelia_based_path.png" width="500" heigh="500" >
 
-> El drone es capaz de esquivar 1 obejto pro la derecha o por la izquierda. NO PARA ya que es una de las primeras simulaciones(foto)
+El drone es capaz de esquivar 1 obejto pro la derecha o por la izquierda. NO PARA ya que es una de las primeras simulaciones(foto)
 
 Algoritmo de Movimiento Autónomo por Sensores Ultrasonido:
-> Agoritmo echo desde cero por el grupo para dotar al dron de movimiento mediante la sensórica de este, que consta de 3 sensores de ultrasonidos: uno frontal y dos a los laterales.
+Agoritmo echo desde cero por el grupo para dotar al dron de movimiento mediante la sensórica de este, que consta de 3 sensores de ultrasonidos: uno frontal y dos a los laterales.
 El módulo tiene como entradas 2 puntos: origen = [xo,yo,zo] y destino =[xd,yd,zd], el lugar de donde va empezar el dron el desplazamiento y la posición exacta donde va a aterrizar.
-(foto)
+<img src="/images/trees.png" width="500" height="500" >
 
 PATH PLANNING:
+
+Finalmente decidimos aplicar A* al ser una estrategia rápida computacionalmente y eficiente para encontrar una posible solución. En el código se le definen los obstáculos, que va a tener que evitar y el algoritmo busca una posible ruta óptima para poder ir al destino.
+
 
