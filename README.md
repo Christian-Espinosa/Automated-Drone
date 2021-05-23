@@ -81,3 +81,4 @@ Y con esto finalmente el dron se va a mover del punto inicial al punto final:
 
 - Arnau Balaguer Albareda 1529184
 - Christian Espinosa Reboredo 1459024
+- <a href="https://github.com/Pau-Riba-Escobar">Pau Riba Escobar 1529314</a>
