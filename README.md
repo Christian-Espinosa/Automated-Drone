@@ -76,6 +76,17 @@ El drone es capaz de esquivar 1 obejto pro la derecha o por la izquierda. NO PAR
 
 Agoritmo echo desde cero por el grupo para dotar al dron de movimiento mediante la sensórica de este, que consta de 3 sensores de ultrasonidos: uno frontal y dos a los laterales.
 El módulo tiene como entradas 2 puntos: origen = [xo,yo,zo] y destino =[xd,yd,zd], el lugar de donde va empezar el dron el desplazamiento y la posición exacta donde va a aterrizar.
+En primer lugar, a partir de la posición de aterrizaje o destino creamos el área de aterrizaje donde  el dron tiene que llegar.
+
+Una primera aproximación fue hacer que el dron llegue exactamente a la posición destino, pero eso tiene un problema debido a la forma en que movemos el dron.  El dron se mueve en el coppelia siguiendo su target, así pues lo que estaremos moviendo será realmente el target, al cual no le aplicamos una velocidad para que se mueva sino que cambiamos su posición continuamente con pequeños cambios en las coordenadas x, y  y z  para que este se desplace . Esto provoca que el dron no esté pasando por todos los puntos, y puede ocurrir que no pasemos por el punto de destino, con lo cual nunca llegaríamos ahí.
+
+El área de aterrizaje nos permite solucionar este problema.
+
+Con el área de aterrizaje creada el dron se moverá en la línea recta que existe entre  los puntos de origen y destino y solo si detecta uno o varios obstáculos los rodeará, y una vez rodeados volverá a la recta que une al origen con el destino.
+
+Respecto a esto existe un problema, y es que los sensores tienen un rango limitado, en nuestro caso los sensores de ultrasonido tienen un rango en forma de cono. Este rango limitado supone que si un objeto queda fuera del rango del cono el dron pueda colisionar con él si es detectado.
+
+Dejando este problema de lado vamos a ver qué maniobras va a hacer el dron en las diferentes situaciones que presenta la sensórica. Para mostrarlo de forma más gráfica vamos a ver una tabla donde tendremos como columnas los distintos sensores , en cada casilla tendremos  0 si no están activados, 1 si lo están. Por último tendremos la columna de qué movimiento se debe realizar según la activación de los sensores.
 
 
 
