@@ -88,6 +88,7 @@ Respecto a esto existe un problema, y es que los sensores tienen un rango limita
 
 Dejando este problema de lado vamos a ver qué maniobras va a hacer el dron en las diferentes situaciones que presenta la sensórica. Para mostrarlo de forma más gráfica vamos a ver una tabla donde tendremos como columnas los distintos sensores , en cada casilla tendremos  0 si no están activados, 1 si lo están. Por último tendremos la columna de qué movimiento se debe realizar según la activación de los sensores.
 
+
 | Sensor Izquierdo | Sensor Derecho | Sensor Central | Maniobra |
 | --- | --- | --- | --- |
 | 0 | 0 | 0 | Seguir hacia delante |
