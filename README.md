@@ -6,7 +6,7 @@
 * [Esquema Hardware](#esquema-hardware)
 * [Arquitectura del Software](#arquitectura-del-software)
 * [Estrategia de Simulación](#estrategia-de-simulación)
-  * [Proyecto VC] (#proyecto-vc)
+  * [Proyecto VC](#proyecto-vc)
   * [Simulaciones Prácticas](#simulaciones-prácticas)
    * [Algoritmo de Movimiento Autónomo por Sensores de Ultrasonidos](#algoritmo-de-movimiento-autónomo-por-sensores-de-ultrasonidos)
    * [PATH PLANNING](#path-planning)
