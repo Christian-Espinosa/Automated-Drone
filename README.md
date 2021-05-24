@@ -86,6 +86,17 @@ Finalmente, un conjunto de acoples para cada servomotor.
 En nuestro caso vamos a utilizar un simulador llamado coppelia, que es con el que estamos trabajando en clase. Una de las primeras pruebas que queremos realizar en el simulador es conseguir que el dron se levante del suelo en una altura concreta y que sea capaz de desplazarse hasta un lugar indicado, de este aspecto se habla más adelante en el documento.
 Para poder realizar las simulaciones ya tenemos implementado en el propio coppelia el objeto dron que lo vamos a modificar según las especificaciones de piezas hardware, especificadas anteriormente. De entrada hemos añadido 3 sensores para medir las distancias del dron a objetos/obstáculos cercanos.
 
+### Proyecto VC
+La idea de este proyecto de Visión por Computador es diseñar y crear el módulo de aterrizaje autónomo del dron UAV. 
+El objetivo principal es conseguir que el dron de manera autónoma consiga aterrizar encima de una plataforma dotada de una marca de identificación única. El dron se situará en las proximidades de la plataforma de aterrizaje gracias a las coordenadas gps anteriormente definidas, el problema en la vida real es que las coordenadas gps tienen una precisión de unos cuantos metros.
+Para ello se va a implementar un algoritmo de reconocimiento de patrones, específicamente patrones conocidos en el campo de la robótica llamados ArUco. El cual va a obtener imágenes en tiempo real de una cámara situada en la parte inferior del dron apuntando siempre al suelo.
+
+<img src="/images/droncoppelia.png" width="500" height="300">
+
+Con este tipo de patrones podremos definir tanto la orientación del dron como la posición y la altura del dron respecto al patrón. La idea es, que el dron pueda aterrizar de manera autónoma a pesar de ventiscas o cualquier tipo de error con odometria, el algoritmo devolverá la corrección del error que detecte tanto en un plano bidimensional X-Y como Z, que podrá definir la velocidad de aterrizaje del dron aproximadamente para evitar que se estrelle si va muy rápido.
+Una vez obtenida toda la información extraíble del marcador se procederá a enviar las instrucciones pertinentes a los módulos de control del dron para mover los motores y con ello centrar el dron. 
+
+
 ### Simulaciones Prácticas
 Simulación simple:
 El dorn es capaz de seguir un path creado por nosotros con el coppelia
