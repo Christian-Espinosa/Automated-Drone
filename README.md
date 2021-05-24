@@ -166,4 +166,4 @@ Como se ha especificado anteriormente, conjuntamente con el proyecto de SM se pu
 - <a href="https://github.com/arnaubalaguer">Arnau Balaguer Albareda</a>
 - <a href="https://github.com/Christian-Espinosa">Christian Espinosa Reboredo</a>
 - <a href="https://github.com/Pau-Riba-Escobar">Pau Riba Escobar</a>
-- <a href="">Alberto Vallespín Herranz</a>
+- <a href="https://github.com/1528948">Alberto Vallespín Herranz</a>
