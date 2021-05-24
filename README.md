@@ -50,15 +50,15 @@ Este código es crucial para que se pueda tener en cuenta todos los comandos de 
 
 Tendremos 3 módulos que se encargaran cada uno de ellos de preparar y procesar la información recibida para actuar en consecuencia. Estos tres módulos son:
 
- * **PROCESADO DE ULTRASONIDOS**: Este aspecto de procesado de datos es el más importante y el que le vamos a dar más preferencia. Lo que detecten los sensores ultrasonido se tiene que tener en cuenta por delante de cualquier algoritmo para evitar colisiones de nuestro robot con objetos en el espacio. Si observamos con los sensores que está muy cerca de un objeto definido por un threshold, procederemos a hacer las maniobras del dron pertinentes para evitar la colisión, esta decisión se tendrá en cuenta con los 3 sensores ultrasonidos distribuidos en el dron.
+   * **PROCESADO DE ULTRASONIDOS**: Este aspecto de procesado de datos es el más importante y el que le vamos a dar más preferencia. Lo que detecten los sensores ultrasonido se tiene que tener en cuenta por delante de cualquier algoritmo para evitar colisiones de nuestro robot con objetos en el espacio. Si observamos con los sensores que está muy cerca de un objeto definido por un threshold, procederemos a hacer las maniobras del dron pertinentes para evitar la colisión, esta decisión se tendrá en cuenta con los 3 sensores ultrasonidos distribuidos en el dron.
 
- * **PROCESADO DEL SENSOR MPU**: Con el módulo MPU nos permite saber las coordenadas del dron. Este módulo es un poco impreciso, así que para saber la ubicación del dron en el   espacio utilizaremos este módulo, pero cuando tengamos que hacer cosas que merezcan precisión tendremos que utilizar otros métodos. Por ejemplo en el sistema de aterrizaje, es importante implementar el algoritmo de reconocimiento de patrones para poder aterrizar exactamente donde se propone. Para este aspecto, como hemos descrito anteriormente se implementará en el proyecto de Visión por computadores, que describimos a continuación:
+   * **PROCESADO DEL SENSOR MPU**: Con el módulo MPU nos permite saber las coordenadas del dron. Este módulo es un poco impreciso, así que para saber la ubicación del dron en el   espacio utilizaremos este módulo, pero cuando tengamos que hacer cosas que merezcan precisión tendremos que utilizar otros métodos. Por ejemplo en el sistema de aterrizaje, es importante implementar el algoritmo de reconocimiento de patrones para poder aterrizar exactamente donde se propone. Para este aspecto, como hemos descrito anteriormente se implementará en el proyecto de Visión por computadores, que describimos a continuación:
 
-* **PROCESADO DE IMÁGENES**: en cuanto a este módulo vemos que se divide en otros dos módulos:
+   * **PROCESADO DE IMÁGENES**: en cuanto a este módulo vemos que se divide en otros dos módulos:
 
-     * **PATTERN MATCHING**: este módulo nos permitirá determinar si hemos o no encontrado la marca en la cual deberemos aterrizar.
+        * **PATTERN MATCHING**: este módulo nos permitirá determinar si hemos o no encontrado la marca en la cual deberemos aterrizar.
 
-     * **RECTIFICACIÓN DE MEDIDAS DE DISTANCIA**: en primer lugar nos permitirá rectificar las distancias a objetos obtenidas mediante el sensor de ultrasonidos, y en segundo lugar nos    permitirá determinar a qué distancia se halla la marca de aterrizaje si es que hemos hecho contacto visual con ella.
+        * **RECTIFICACIÓN DE MEDIDAS DE DISTANCIA**: en primer lugar nos permitirá rectificar las distancias a objetos obtenidas mediante el sensor de ultrasonidos, y en segundo lugar nos    permitirá determinar a qué distancia se halla la marca de aterrizaje si es que hemos hecho contacto visual con ella.
 
 * **CONTROL DE MOTORES**: en último lugar tenemos el módulo encargado de mover al dron. Utilizará toda la información recabada mediante la trayectoria y las medidas en tiempo real del dron para modular la velocidad y aceleración de los motores y así permitirnos movernos y acelerar. Está formado por 2 módulos que son los siguientes:
      * **MODULACIÓN DE PWM**: será el módulo que nos permitirá mediante pulsos PWM controlar a los motores.
