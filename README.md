@@ -72,7 +72,7 @@ El drone es capaz de esquivar 1 obejto pro la derecha o por la izquierda. NO PAR
 
 <img src="/images/simple.png" width="500" height="300">
 
-**Algoritmo de Movimiento Autónomo por Sensores Ultrasonido:**
+### Algoritmo de Movimiento Autónomo por Sensores de Ultrasonidos:
 
 Agoritmo echo desde cero por el grupo para dotar al dron de movimiento mediante la sensórica de este, que consta de 3 sensores de ultrasonidos: uno frontal y dos a los laterales.
 El módulo tiene como entradas 2 puntos: origen = [xo,yo,zo] y destino =[xd,yd,zd], el lugar de donde va empezar el dron el desplazamiento y la posición exacta donde va a aterrizar.
@@ -81,7 +81,7 @@ El módulo tiene como entradas 2 puntos: origen = [xo,yo,zo] y destino =[xd,yd,z
 
 <img src="/images/trees.PNG" width="500" height="300" >
 
-**PATH PLANNING:**
+### PATH PLANNING:
 
 Finalmente decidimos aplicar A* al ser una estrategia rápida computacionalmente y eficiente para encontrar una posible solución. En el código se le definen los obstáculos, que va a tener que evitar y el algoritmo busca una posible ruta óptima para poder ir al destino.
 
