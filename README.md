@@ -43,10 +43,28 @@ This is the list of the used components:
 
 <img src="/images/ARQUITECTURA_SW_def.png" width="500" height="300" >
 
-**CONTROL DEL DRON:** Es nuestra unidad central de procesamiento y se encarga de comunicarse con el resto de módulos para garantizar las funcionalidades del dispositivo. Este consta de software que dependiendo de las necesidades de cada módulo adjunto, enviará las señales pertinentes al controlador de motores para que el dron pueda ejecutar las maniobras pertinentes. 
+* **CONTROL DEL DRON:** Es nuestra unidad central de procesamiento y se encarga de comunicarse con el resto de módulos para garantizar las funcionalidades del dispositivo. Este consta de software que dependiendo de las necesidades de cada módulo adjunto, enviará las señales pertinentes al controlador de motores para que el dron pueda ejecutar las maniobras pertinentes. 
 Este código es crucial para que se pueda tener en cuenta todos los comandos de los diferentes módulos y dar prioridades dependiendo de las necesidades.
 
-**OBTENCIÓN DE INFORMACIÓN SENSÓRICA:** a partir de los sensores de los que dispone nuestro dron obtendremos información para luego procesarla y corregir la ruta establecida por el Coverage Path Planning  si es necesario.
+* **OBTENCIÓN DE INFORMACIÓN SENSÓRICA:** a partir de los sensores de los que dispone nuestro dron obtendremos información para luego procesarla y corregir la ruta establecida por el Coverage Path Planning  si es necesario.
+
+Tendremos 3 módulos que se encargaran cada uno de ellos de preparar y procesar la información recibida para actuar en consecuencia. Estos tres módulos son:
+
+ * **PROCESADO DE ULTRASONIDOS**: Este aspecto de procesado de datos es el más importante y el que le vamos a dar más preferencia. Lo que detecten los sensores ultrasonido se tiene que tener en cuenta por delante de cualquier algoritmo para evitar colisiones de nuestro robot con objetos en el espacio. Si observamos con los sensores que está muy cerca de un objeto definido por un threshold, procederemos a hacer las maniobras del dron pertinentes para evitar la colisión, esta decisión se tendrá en cuenta con los 3 sensores ultrasonidos distribuidos en el dron.
+
+ * **PROCESADO DEL SENSOR MPU**: Con el módulo MPU nos permite saber las coordenadas del dron. Este módulo es un poco impreciso, así que para saber la ubicación del dron en el   espacio utilizaremos este módulo, pero cuando tengamos que hacer cosas que merezcan precisión tendremos que utilizar otros métodos. Por ejemplo en el sistema de aterrizaje, es importante implementar el algoritmo de reconocimiento de patrones para poder aterrizar exactamente donde se propone. Para este aspecto, como hemos descrito anteriormente se implementará en el proyecto de Visión por computadores, que describimos a continuación:
+
+* **PROCESADO DE IMÁGENES**: en cuanto a este módulo vemos que se divide en otros dos módulos:
+
+ * **PATTERN MATCHING**: este módulo nos permitirá determinar si hemos o no encontrado la marca en la cual deberemos aterrizar.
+
+ * **RECTIFICACIÓN DE MEDIDAS DE DISTANCIA**: en primer lugar nos permitirá rectificar las distancias a objetos obtenidas mediante el sensor de ultrasonidos, y en segundo lugar nos    permitirá determinar a qué distancia se halla la marca de aterrizaje si es que hemos hecho contacto visual con ella.
+
+* **CONTROL DE MOTORES**: en último lugar tenemos el módulo encargado de mover al dron. Utilizará toda la información recabada mediante la trayectoria y las medidas en tiempo real del dron para modular la velocidad y aceleración de los motores y así permitirnos movernos y acelerar. Está formado por 2 módulos que son los siguientes:
+ * **MODULACIÓN DE PWM**: será el módulo que nos permitirá mediante pulsos PWM controlar a los motores.
+ * **ESTABILIZACIÓN DE MOTORES**: Mediante PID este módulo nos permitirá calcular el error que hay en los parámetros de los motores y poder rectificar posteriormente.
+ * **CALIBRACIÓN DE MOTORES**: antes de poner el dron en funcionamiento debemos calibrar los motores para evitar que las pequeñas vibraciones que estos producen puedan suponer errores en la orientación y velocidad del dron.
+
 
 ## Contribuciones
 
