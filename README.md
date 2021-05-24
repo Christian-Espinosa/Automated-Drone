@@ -22,11 +22,11 @@ This is the list of the used components:
 - Impresiones 3d
 
 ## Hardware Scheme
-<img src="/images/hw_scheme.png" width="500" heigh="500" >
+<img src="/images/hw_scheme.png" width="500" height="300" >
 
 ## Software Architecture
 
-<img src="/images/ARQUITECTURA_SW_def.png" width="500" heigh="500" >
+<img src="/images/ARQUITECTURA_SW_def.png" width="500" height="300" >
 
 ## Amazing contributions
 
@@ -41,6 +41,8 @@ Por otra parte, hemos creamos los distintos brazos del dron, donde colocaremos t
 
 Finalmente, un conjunto de acoples para cada servomotor.
 
+<img src="/images/3D_model.png" width="500" height="300">
+
 ## Simulation Strategy
 
 En nuestro caso vamos a utilizar un simulador llamado coppelia, que es con el que estamos trabajando en clase. Una de las primeras pruebas que queremos realizar en el simulador es conseguir que el dron se levante del suelo en una altura concreta y que sea capaz de desplazarse hasta un lugar indicado, de este aspecto se habla más adelante en el documento.
@@ -49,7 +51,7 @@ Para poder realizar las simulaciones ya tenemos implementado en el propio coppel
 ### Simulaciones Prácticas
 Simulación simple:
 El dorn es capaz de seguir un path creado por nosotros con el coppelia
-<img src="/images/coppelia_based_path.png" width="500" heigh="500" >
+<img src="/images/coppelia_based_path.png" width="500" height="500" >
 
 El drone es capaz de esquivar 1 obejto pro la derecha o por la izquierda. NO PARA ya que es una de las primeras simulaciones
 
