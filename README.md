@@ -145,8 +145,13 @@ Así pues observamos que:
 De esta forma ha quedado determinado el movimiento del dron de un punto inicial a un punto final mediante la sensórica de la que dispone.
 
 
+Aquí vemos como el dron se encuentra en una situación donde tiene que sortear árboles en un bosque:
 
 <img src="/images/trees.PNG" width="500" height="300" >
+
+Otro situación es la siguiente en la que el dron tiene que salir de este laberinto:
+
+<img src="/images/labirinth.png" width="500" height="300" >
 
 ### PATH PLANNING:
 
