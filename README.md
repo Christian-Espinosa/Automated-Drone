@@ -151,7 +151,7 @@ Aquí vemos como el dron se encuentra en una situación donde tiene que sortear 
 
 Otro situación es la siguiente en la que el dron tiene que salir de este laberinto:
 
-<img src="/images/labirinth.png" width="500" height="300" >
+<img src="/images/labirinth.PNG" width="500" height="300" >
 
 ### PATH PLANNING:
 
