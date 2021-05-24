@@ -100,6 +100,16 @@ Dejando este problema de lado vamos a ver qué maniobras va a hacer el dron en l
 | 1 | 1 | 1 | Elevarse por encima del objeto|
 
 
+Así pues observamos que:
+ * siempre que la parte frontal del dron esté despejada avanzaremos hacia delante,
+ * si tenemos un objeto en frente y ninguno a los lados tiraremos hacia la izquierda,
+ * si tenemos un objeto en frente y en alguno, y sólo uno, de los lados tiraremos hacia el lado donde no hay nada,
+ * y por último si tenemos objetos en todas direcciones nos elevaremos para sortearlos.
+ 
+De esta forma ha quedado determinado el movimiento del dron de un punto inicial a un punto final mediante la sensórica de la que dispone.
+
+
+
 <img src="/images/trees.PNG" width="500" height="300" >
 
 ### PATH PLANNING:
