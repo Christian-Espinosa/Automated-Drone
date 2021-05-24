@@ -56,14 +56,14 @@ Tendremos 3 módulos que se encargaran cada uno de ellos de preparar y procesar 
 
 * **PROCESADO DE IMÁGENES**: en cuanto a este módulo vemos que se divide en otros dos módulos:
 
- * **PATTERN MATCHING**: este módulo nos permitirá determinar si hemos o no encontrado la marca en la cual deberemos aterrizar.
+     * **PATTERN MATCHING**: este módulo nos permitirá determinar si hemos o no encontrado la marca en la cual deberemos aterrizar.
 
- * **RECTIFICACIÓN DE MEDIDAS DE DISTANCIA**: en primer lugar nos permitirá rectificar las distancias a objetos obtenidas mediante el sensor de ultrasonidos, y en segundo lugar nos    permitirá determinar a qué distancia se halla la marca de aterrizaje si es que hemos hecho contacto visual con ella.
+     * **RECTIFICACIÓN DE MEDIDAS DE DISTANCIA**: en primer lugar nos permitirá rectificar las distancias a objetos obtenidas mediante el sensor de ultrasonidos, y en segundo lugar nos    permitirá determinar a qué distancia se halla la marca de aterrizaje si es que hemos hecho contacto visual con ella.
 
 * **CONTROL DE MOTORES**: en último lugar tenemos el módulo encargado de mover al dron. Utilizará toda la información recabada mediante la trayectoria y las medidas en tiempo real del dron para modular la velocidad y aceleración de los motores y así permitirnos movernos y acelerar. Está formado por 2 módulos que son los siguientes:
- * **MODULACIÓN DE PWM**: será el módulo que nos permitirá mediante pulsos PWM controlar a los motores.
- * **ESTABILIZACIÓN DE MOTORES**: Mediante PID este módulo nos permitirá calcular el error que hay en los parámetros de los motores y poder rectificar posteriormente.
- * **CALIBRACIÓN DE MOTORES**: antes de poner el dron en funcionamiento debemos calibrar los motores para evitar que las pequeñas vibraciones que estos producen puedan suponer errores en la orientación y velocidad del dron.
+     * **MODULACIÓN DE PWM**: será el módulo que nos permitirá mediante pulsos PWM controlar a los motores.
+     * **ESTABILIZACIÓN DE MOTORES**: Mediante PID este módulo nos permitirá calcular el error que hay en los parámetros de los motores y poder rectificar posteriormente.
+     * **CALIBRACIÓN DE MOTORES**: antes de poner el dron en funcionamiento debemos calibrar los motores para evitar que las pequeñas vibraciones que estos producen puedan suponer errores en la orientación y velocidad del dron.
 
 
 ## Contribuciones
