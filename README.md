@@ -43,6 +43,11 @@ This is the list of the used components:
 
 <img src="/images/ARQUITECTURA_SW_def.png" width="500" height="300" >
 
+**CONTROL DEL DRON:** Es nuestra unidad central de procesamiento y se encarga de comunicarse con el resto de módulos para garantizar las funcionalidades del dispositivo. Este consta de software que dependiendo de las necesidades de cada módulo adjunto, enviará las señales pertinentes al controlador de motores para que el dron pueda ejecutar las maniobras pertinentes. 
+Este código es crucial para que se pueda tener en cuenta todos los comandos de los diferentes módulos y dar prioridades dependiendo de las necesidades.
+
+**OBTENCIÓN DE INFORMACIÓN SENSÓRICA:** a partir de los sensores de los que dispone nuestro dron obtendremos información para luego procesarla y corregir la ruta establecida por el Coverage Path Planning  si es necesario.
+
 ## Contribuciones
 
 El dron puede actuar por sí mismo. Se le puede aplicar una ruta y a partir de entonces, ser totalmente autónomo con los objetivos que se le marquen hasta que aterrice.
