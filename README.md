@@ -140,6 +140,10 @@ De esta forma ha quedado determinado el movimiento del dron de un punto inicial 
 
 Finalmente decidimos aplicar A* al ser una estrategia rápida computacionalmente y eficiente para encontrar una posible solución. En el código se le definen los obstáculos, que va a tener que evitar y el algoritmo busca una posible ruta óptima para poder ir al destino.
 
+Ciertos problemas que hemos encontrado implementando el algoritmo en el dron por ejemplo cuando se presentan obstáculos en la simulación (adjunta en el GitHub Rlp_ppla_00.ttt), consta de un laberinto que tiene que completar, el algoritmo al hacer el camino óptimo a veces se puede acercar demasiado a la pared, para evitar
+
+este tipo de problemas los obstáculos (las paredes) las definimos en el programa un poco más anchas para evitar colisiones. El código algoritmo en sí, lo hemos obtenido de una librería de algoritmos que se define en los adjuntos del proyecto.
+
 Primeramente obtenemos el área de trabajo:
 
 <img src="/images/area.png" width="500" height="300" >
@@ -148,9 +152,14 @@ A partir de esta obtenemos una serie de puntos por donde el dron va a pasar medi
 
 <img src="/images/path.png" width="500" height="300" >
 
-Y con esto finalmente el dron se va a mover del punto inicial al punto final:
+Una vez se ha programado el camino entre los obstáculos este se transfiere cada punto de coordenadas cada cierto tiempo a través de la API de Coppelia para que el dron pueda moverse y poder así definir también una velocidad de vuelo definido por un parámetro en el código.
+
 
 <img src="/images/path_sim.png" width="500" height="300" >
+
+Finalmente para para que se vea visualmente en el simulador, hemos creado las paredes del laberinto con las mismas dimensiones que se definen en el código, de esta manera conseguimos que el dron consiga su objetivo.
+Como se ha especificado anteriormente, conjuntamente con el proyecto de SM se pueden obtener las altimetrías de un área de trabajo. De esta manera, si por ejemplo queremos que el dron vuele a 1 metro del suelo en este área, podemos obtener todos los puntos de objetos a esta altura para tenerlos en cuenta como objetos con los que puede haber una colisión. Esta idea, es posible pero requeriría mucho más tiempo para implementar.
+
 
 ## Autores:
 
