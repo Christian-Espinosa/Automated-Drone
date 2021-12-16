@@ -177,7 +177,7 @@ Una vez se ha programado el camino entre los obstáculos este se transfiere cada
 Finalmente para para que se vea visualmente en el simulador, hemos creado las paredes del laberinto con las mismas dimensiones que se definen en el código, de esta manera conseguimos que el dron consiga su objetivo.
 Como se ha especificado anteriormente, conjuntamente con el proyecto de SM se pueden obtener las altimetrías de un área de trabajo. De esta manera, si por ejemplo queremos que el dron vuele a 1 metro del suelo en este área, podemos obtener todos los puntos de objetos a esta altura para tenerlos en cuenta como objetos con los que puede haber una colisión. Esta idea, es posible pero requeriría mucho más tiempo para implementar.
 
-#Video
+# Video
 
 https://drive.google.com/file/d/1bFjRcQO3L5cTkejAs0lNbsTfZCTfwib_/view
 
